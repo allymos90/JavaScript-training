@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Create a new file called objectTask and attempt the below questions:
+// my_object= [23, “Jane”, 560, [“Lesson”, “Maths”, {“currency” : “KES”}], 987, 76,”John”]
+// Display:
+// 1. KES
+// 2. 560
+// 3. Maths
+// Display "KES"
+let my_object = [23, "Jane", 560, ["Lesson", "Maths", {currency: "KES"}], 987, 76, "John"];
+
+
+console.log(my_object[3][2].currency);
+
+// Display "560"
+let my_object1 = [23, "Jane", 560, ["Lesson", "Maths", {currency: "KES"}], 987, 76, "John"];
+
+
+console.log(my_object1[2]);
+
+// Display "Maths"
+let my_object2 = [23, "Jane", 560, ["Lesson", "Maths", {currency: "KES"}], 987, 76, "John"];
+
+
+console.log(my_object2[3][1]);
+
+
+// 4. In the object with the key currency, add another key “amount” with value 90
+// 5. Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually.
+//      Hint: Strings can be reversed using reverse() functions
+// 6. Change the name “John” to “Jane” . 
+
+// Qn:4 Add another key "amount" with value 90
+let my_object3 = [23, "Jane", 560, ["Lesson", "Maths", {currency: "KES"}], 987, 76, "John"];
+
+
+my_object3[3][2].amount = 90;
+
+// Display the modified object
+console.log(my_object3);
+
+// Qn:5
+// Define the number
+let number = 987;
+
+// Convert the number to a string
+let numberString = number.toString();
+
+// Split the string into an array of characters
+let charArray = numberString.split('');
+
+// Reverse the array of characters
+charArray.reverse();
+
+// Join the array back into a string
+let reversedString = charArray.join('');
+
+// Convert the reversed string back to a number
+let reversed = +reversedString;
+
+// Display the reversed number
+console.log(reversed);
+
+//Qn:6
+// Change the name "John" to "Jane"
+let my_object4 = [23, "Jane", 560, ["Lesson", "Maths", {currency: "KES"}], 987, 76, "John"];
+
+
+my_object4[my_object4.indexOf("John")] = "Jane";
+
+// Display the modified array
+console.log(my_object4);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
